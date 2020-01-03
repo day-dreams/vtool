@@ -13,4 +13,4 @@ RUN mkdir -p /usr/local/app/vcms-go/demo
 WORKDIR /usr/local/app/vcms-go/demo
 
 ADD build build
-CMD ["/usr/local/app/vcms-go/demo/build/vcmsdemo"]
+CMD ["/usr/local/app/vcms-go/demo/build/ffmpegdemo"]
