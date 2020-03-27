@@ -1,5 +1,5 @@
 //
-// Created by kakaxizhang on 2020-01-04.
+// Created by day-dreams on 2020-01-04.
 //
 
 #include "../include/FfmpegRunnable.h"

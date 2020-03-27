@@ -16,4 +16,6 @@ vendor/
 
 build
 .idea
-
+.vscode
+output
+*.ppm

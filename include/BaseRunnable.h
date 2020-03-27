@@ -1,15 +1,13 @@
 //
-// Created by kakaxizhang on 2020-01-03.
+// Created by day-dreams on 2020-01-03.
 //
 
 #ifndef FFMPEG_BASERUNNABLE_H
 #define FFMPEG_BASERUNNABLE_H
 
-
 class BaseRunnable {
 public:
-    virtual void run();
+  virtual void run();
 };
 
-
-#endif //FFMPEG_BASERUNNABLE_H
+#endif // FFMPEG_BASERUNNABLE_H
