@@ -10,7 +10,7 @@ extern "C" {
 #include <libswscale/swscale.h>
 }
 
-void ScreenShot::run() {
+void ScreenShot::Run() {
     av_register_all();
     // get video header info
     AVFormatContext *pFormatCtx = nullptr;
@@ -81,7 +81,7 @@ void ScreenShot::run() {
                         pCodecCtx->width, pCodecCtx->height));
 
     AVPacket packet;
-    int frameFinished, index;
+    int frameFinished = 0, index = 0;
     while (true) {//read one frame
         auto ret = av_read_frame(pFormatCtx, &packet);
         if (ret < 0) {
@@ -95,16 +95,16 @@ void ScreenShot::run() {
 
             if (frameFinished) {
                 ++index;
-                sws_scale(
-                        sws_ctx,
-                        (uint8_t const *const *) pframe->data,
-                        pframe->linesize,
-                        0,
-                        pCodecCtx->height,
-                        pframergb->data,
-                        pframergb->linesize
-                );
                 if (index == this->at) {
+                    sws_scale(
+                            sws_ctx,
+                            (uint8_t const *const *) pframe->data,
+                            pframe->linesize,
+                            0,
+                            pCodecCtx->height,
+                            pframergb->data,
+                            pframergb->linesize
+                    );
                     this->SaveFrame(pframergb, pCodecCtx->width, pCodecCtx->height, this->at);
                     break;
                 }

@@ -34,7 +34,7 @@ void printMetaData(string path) {
 
 }
 
-void FfmpegRunnable::run() {
+void FfmpegRunnable::Run() {
     string path = "/Users/kakaxi/Desktop/huojianshaonv101.MP4";
     printMetaData(path);
 }

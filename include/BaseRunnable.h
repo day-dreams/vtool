@@ -7,7 +7,7 @@
 
 class BaseRunnable {
 public:
-  virtual void run();
+  virtual void Run();
 };
 
 #endif // FFMPEG_BASERUNNABLE_H

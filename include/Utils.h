@@ -44,5 +44,12 @@ inline int must(int t) {
     return t;
 }
 
+template<class T>
+inline void arrayMustHaveElementsMoreThan(T *t, int len) {
+    if (sizeof(t) <= len) {
+        panic("array must have more elements than {}", len);
+    }
+}
+
 
 #endif //FFMPEG_UTILS_H

@@ -8,7 +8,7 @@
 #include "BaseRunnable.h"
 
 class FfmpegRunnable : public BaseRunnable {
-  void run();
+  void Run();
 };
 
 #endif // FFMPEG_FFMPEGRUNNABLE_H

@@ -5,7 +5,7 @@
 #include "../include/BaseRunnable.h"
 #include <iostream>
 
-void BaseRunnable::run() {
+void BaseRunnable::Run() {
 
     using namespace std;
 

@@ -21,7 +21,7 @@ public:
 
     void SaveFrame(AVFrame *pFrame, int width, int height, int iFrame);
 
-    void run();
+    void Run();
 };
 
 #endif // SCREEN_SHOT_H
